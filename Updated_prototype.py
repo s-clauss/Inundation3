@@ -31,13 +31,13 @@ from scipy.stats import gaussian_kde
 # %%
 st.title("Inundation Method Dashboard")
 
-days = st.number_input("Days of Inundation", min_value=0.0, value=0.0)
+days = st.number_input("Days of Inundation", min_value=0.0, value=30.0)
 day_cv = st.slider("Coefficient of Variation for the Days of Inundation (optional assumed 30%) ", min_value = 0.0, value = 0.3)
 
-area = st.number_input("Surface Area (m²)", min_value=0.0, value=0.0)
+area = st.number_input("Surface Area (m²)", min_value=0.0, value=100.0)
 area_cv = st.slider("Coefficient of varation for area of inundation (optional assumed 30%)", min_value = 0.0, value = 0.3) 
 
-depth = st.number_input("Depth (m)", min_value=0.0, value=0.0)
+depth = st.number_input("Depth (m)", min_value=0.0, value=0.1)
 depth_cv = st.slider("Coefficient of Variation for the Depth (optional assumed 30%) ", min_value = 0.0, value = 0.3)
 
 # %%
